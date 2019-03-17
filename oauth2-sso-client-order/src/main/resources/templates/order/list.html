@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+</head>
+<body>
+<h3><span th:text="${#authentication.name}"></span> | <a th:href="@{/logout}">退出</a> </h3>
+<h2>这是订单管理列表页面</h2>
+<h2><a href="http://localhost:8082/memberSystem/member/list">会员列表页面</a></h2>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ela Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/css/normalize.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/bootstrap-4.3.1-dist/css/bootstrap.min.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/css/font-awesome.min.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/css/style.css}">
+
+</head>
+<body class="bg-dark">
+
+<div class="sufee-login d-flex align-content-center flex-wrap">
+    <div class="container">
+        <div class="login-content">
+            <div class="login-logo">
+                <h1 style="color: #57bf95;">欢迎来到王者荣耀</h1>
+            </div>
+            <div class="login-form">
+                <form th:action="@{/login}" method="post">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                        <label class="pull-right">
+                            <a href="#">Forgotten Password?</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30" style="font-size: 18px;">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" th:src="@{/assets/js/jquery-2.1.4.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/bootstrap-4.3.1-dist/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/js/jquery.matchHeight.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/js/main.js}"></script>
+
+</body>
+</html>

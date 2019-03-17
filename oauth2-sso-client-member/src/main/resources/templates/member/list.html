@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>会员列表</title>
+
+    <link type="text/css" rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+
+</head>
+<body>
+<h3>当前登录用户：<span th:text="${#authentication.name}"></span> | <a href="http://localhost:8080/logout">退出</a></h3>
+<h2>这是会员管理列表页面</h2>
+<table class="table">
+    <tr>
+        <th>名称</th>
+        <th>职业</th>
+        <th>简介</th>
+        <th>创建时间</th>
+    </tr>
+    <tr>
+        <td>蓝忘机</td>
+        <td>蓝二公子</td>
+        <td>蓝氏双壁之一</td>
+        <td>2019-03-01</td>
+    </tr>
+    <tr>
+        <td>魏无羡</td>
+        <td>驱邪师</td>
+        <td>云梦江氏大弟子</td>
+        <td>2019-03-02</td>
+    </tr>
+    <tr>
+        <td>苏沐橙</td>
+        <td>枪炮师</td>
+        <td>一流女玩家</td>
+        <td>2019-03-03</td>
+    </tr>
+</table>
+</body>
+</html>

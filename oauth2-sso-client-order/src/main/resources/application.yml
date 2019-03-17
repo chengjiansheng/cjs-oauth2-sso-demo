@@ -1,0 +1,14 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /orderSystem
+security:
+  oauth2:
+    client:
+      client-id: OrderManagement
+      client-secret: order123
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8080/oauth/token_key
