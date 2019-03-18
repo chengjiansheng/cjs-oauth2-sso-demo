@@ -20,9 +20,4 @@ public class LoginController {
         return "index";
     }
 
-    @GetMapping("/list")
-    public String list() {
-        return "list";
-    }
-
 }

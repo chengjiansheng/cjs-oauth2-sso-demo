@@ -43,4 +43,11 @@ public class MemberController {
 
         return "add";
     }
+
+    @PreAuthorize("hasAuthority('member:detail')")
+    @ResponseBody
+    @GetMapping("/detail")
+    public String detail() {
+        return "detail";
+    }
 }
