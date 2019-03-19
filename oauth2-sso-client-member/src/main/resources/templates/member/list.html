@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<h3>当前登录用户：<span th:text="${#authentication.name}"></span> | <a href="http://localhost:8080/logout">退出</a></h3>
+<h3>当前登录用户：<span th:text="${#authentication.name}"></span> | <a th:href="@{/logout}">退出</a></h3>
 <h2>这是会员管理列表页面</h2>
 <table class="table">
     <tr>
